@@ -17,7 +17,7 @@ header {
   left: 0;
   width: 100%;
   padding: 10px 10px;
-  background-color: #e0e0e0;
+  background-color: #f8f8fc;
   height: 65px;
 }
 
@@ -154,9 +154,11 @@ body {
   justify-content: space-evenly;
 }
 
-.about-box,
+/* .about-box, */
+.about-text,
 .about-img {
   display: flex;
+  flex-direction: column;
   flex: 1;
   max-width: 600px;
   box-sizing: border-box;
@@ -166,7 +168,7 @@ body {
 }
 
 .about-text {
-  box-sizing: border-box;
+  align-items: start;
 }
 
 .about-text h1 {
@@ -763,6 +765,7 @@ main .category-links a.active .category-link {
   position: fixed;
   bottom: 1rem;
   right: 1rem;
+  z-index: 3;
 }
 
 #shopping-cart {
@@ -772,7 +775,7 @@ main .category-links a.active .category-link {
 @media (max-width: 1275px) {
   .contact h2,
   .opening-hours h2 {
-    font-size: 1.4rem;
+    font-size: 1rem;
   }
 
   .contact dl,
@@ -789,10 +792,14 @@ main .category-links a.active .category-link {
   }
 
   .about-text p {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
   }
-
+  /* 
   .about-box {
+    max-width: 400px;
+  } */
+
+  .about-text {
     max-width: 400px;
   }
 
@@ -994,7 +1001,7 @@ main .category-links a.active .category-link {
     transform: translateY(calc(100vh + 60px));
     transition: transform 0.5s ease-out, opacity 0.15s ease-out 0.35s;
     padding: 0;
-    background: linear-gradient(to bottom, #e0e0e0, #919191);
+    background: linear-gradient(to bottom, #f8f8fc, #a8a8a8);
     z-index: 10;
     opacity: 1;
   }
@@ -1040,16 +1047,21 @@ main .category-links a.active .category-link {
     align-items: center;
     flex-direction: column;
     margin: 0 6rem;
+    width: 400px;
   }
 
   #about {
     display: flex;
     flex-direction: column;
     justify-content: start;
-    padding: 3rem 2.5rem;
+    padding: 3rem 1.5rem;
   }
 
-  .about-box {
+  /* .about-box {
+    max-width: 400px;
+  } */
+
+  .about-text {
     max-width: 400px;
   }
 
@@ -1066,7 +1078,7 @@ main .category-links a.active .category-link {
 
   .contact,
   .opening-hours {
-    width: 100%;
+    width: 80%;
     padding: 0;
   }
 
@@ -1232,7 +1244,7 @@ main .category-links a.active .category-link {
   }
 
   .home-content {
-    max-width: 250px;
+    max-width: 275px;
   }
 
   .home-content h1 {
@@ -1240,7 +1252,7 @@ main .category-links a.active .category-link {
   }
 
   .home-content p {
-    font-size: 0.7rem;
+    font-size: 0.85rem;
   }
 
   .home-content button a {
@@ -1265,12 +1277,12 @@ main .category-links a.active .category-link {
   }
 
   .about-text h1 {
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
 
-  .about-text p {
-    font-size: 0.6rem;
-  }
+  /* .about-text p {
+    font-size: 0.8rem;
+  } */
 
   .contact-hours-container {
     width: 90%;
@@ -1374,12 +1386,26 @@ main .category-links a.active .category-link {
     bottom: 10%;
   }
 
+  .contact dl,
+  .opening-hours table {
+    font-size: 0.8rem;
+  }
+
   .cart-item .item-text .item-name {
     font-size: 0.7rem;
   }
 
   .cart-total {
     font-size: 0.8rem;
+  }
+
+  .menu-title,
+  .menu-title::before {
+    height: calc(100vh - 50px);
+  }
+
+  .cart {
+    min-height: 200px;
   }
 }
 

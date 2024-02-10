@@ -28,24 +28,24 @@ const About = () => {
 
   return (
     <>
-      <div className="about-box">
-        <motion.div
-          className="about-text"
-          ref={textRef}
-          variants={animationScale}
-          initial="hidden"
-          animate={textControl}
-        >
-          <h1>Welcome to Gold Coast Takeaways</h1>
-          <p>
-            Proudly operated by dedicated owners, our menu features signature
-            fish and chips, mouthwatering burgers, toasties, and more. With a
-            commitment to quality and fresh, locally-sourced ingredients, every
-            dish is crafted to perfection. Discover the warmth, flavors, and joy
-            of sharing a meal at Gold Coast Takeaways.
-          </p>
-        </motion.div>
-      </div>
+      {/* <div className="about-box"> */}
+      <motion.div
+        className="about-text"
+        ref={textRef}
+        variants={animationScale}
+        initial="hidden"
+        animate={textControl}
+      >
+        <h1>Welcome to Gold Coast Takeaways</h1>
+        <p>
+          Proudly operated by dedicated owners, our menu features signature fish
+          and chips, mouthwatering burgers, toasties, and more. With a
+          commitment to quality and fresh, locally-sourced ingredients, every
+          dish is crafted to perfection. Discover the warmth, flavors, and joy
+          of sharing a meal at Gold Coast Takeaways.
+        </p>
+      </motion.div>
+      {/* </div> */}
       <motion.div
         className="about-img"
         ref={imgRef}
