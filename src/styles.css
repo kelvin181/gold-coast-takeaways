@@ -83,12 +83,9 @@ body {
 }
 
 .home::before {
-  background: url(images/home-background.jpg) no-repeat center center fixed; 
-  /* -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover; */
+  background: url(images/home-background.jpg) no-repeat center center fixed;
   background-size: cover;
-  transform: translate3d(0,0,0);
+  transform: translate3d(0, 0, 0);
 }
 
 .home-content {
@@ -892,7 +889,7 @@ main .category-links a.active .category-link {
   .invisible-box {
     display: none;
   }
-  
+
   .cart-container {
     display: none;
   }
@@ -1110,7 +1107,7 @@ main .category-links a.active .category-link {
     max-width: 150px;
     padding: 5px;
   }
-  
+
   .menu-title-content h1 {
     font-size: 2.3rem;
   }
@@ -1128,7 +1125,7 @@ main .category-links a.active .category-link {
   .menu-content {
     width: 400px;
   }
-  
+
   .menu-item .item-header .item-title {
     font-size: 0.7rem;
   }
@@ -1400,7 +1397,7 @@ main .category-links a.active .category-link {
     width: 60%;
     justify-content: center;
   }
-  
+
   .down-button img {
     max-width: 35px;
     bottom: 10%;

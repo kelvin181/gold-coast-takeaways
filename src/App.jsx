@@ -1,11 +1,11 @@
 import React from "react";
-import "./styles.css";
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import { Toaster } from "react-hot-toast";
-import Menu from "./components/Menu";
+import { Route, Routes } from "react-router-dom";
 import Home from "./components/Home";
-import ScrollToAnchor from "./components/ScrollToAnchor";
+import Menu from "./components/Menu";
 import Navbar from "./components/NavBar";
+import ScrollToAnchor from "./components/ScrollToAnchor";
+import "./styles.css";
 
 const App = () => {
   return (
@@ -20,11 +20,11 @@ const App = () => {
               primary: "green",
               secondary: "white",
             },
-            duration: 1000
+            duration: 1000,
           },
-          error :{
-            duration: 1000
-          }
+          error: {
+            duration: 1000,
+          },
         }}
       />
       <Routes>
