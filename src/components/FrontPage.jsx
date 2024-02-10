@@ -9,7 +9,10 @@ const FrontPage = () => {
 
   const sentence = {
     hidden: { opacity: 0 },
-    visible: { opacity: 1, transition: { staggerChildren: 0.06 } },
+    visible: {
+      opacity: 1,
+      transition: { staggerChildren: 0.06, delayChildren: 0.3 },
+    },
   };
 
   const letter = {
@@ -51,7 +54,7 @@ const FrontPage = () => {
             <motion.span
               key={char + "-" + index}
               variants={letter}
-              transition={{ delay: 0.72 + index * 0.06 }}
+              transition={{ delay: 0.72 + index * 0.06 + 0.3 }}
               style={{
                 color: gradientColors[index],
               }}
@@ -71,7 +74,7 @@ const FrontPage = () => {
               type: "spring",
               stiffness: 75,
               damping: 20,
-              delay: 1.86,
+              delay: 1.86 + 0.3,
             },
           },
         }}
@@ -92,7 +95,7 @@ const FrontPage = () => {
               type: "spring",
               stiffness: 75,
               damping: 20,
-              delay: 2.16,
+              delay: 2.16 + 0.3,
             },
           },
         }}
