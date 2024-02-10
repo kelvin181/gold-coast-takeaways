@@ -17,7 +17,7 @@ const Menu = () => {
   let addItem;
 
   useEffect(() => {
-    fetch("http://localhost:5000/api/menu")
+    fetch("https://goldcoasttakeaways.pythonanywhere.com/api/menu")
       .then((response) => response.json())
       .then((data) => {
         setMenuItems(data);
