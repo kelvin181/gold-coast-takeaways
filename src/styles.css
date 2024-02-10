@@ -626,11 +626,13 @@ main .category-links a.active .category-link {
   padding: 0 0.3rem;
 }
 
-.decrease-quantity:hover,
-.increase-quantity:hover,
-.crumb-option button:hover {
-  background-color: #f7f5e6;
-  color: #333a56;
+@media (hover: hover) {
+  .decrease-quantity:hover,
+  .increase-quantity:hover,
+  .crumb-option button:hover {
+    background-color: #f7f5e6;
+    color: #333a56;
+  }
 }
 
 .increase-quantity,
@@ -918,11 +920,6 @@ main .category-links a.active .category-link {
     text-decoration: none;
     color: #f7f5e6;
     border: thin solid #333a56;
-  }
-
-  .scroll-to-cart:hover {
-    background-color: #f7f5e6;
-    color: #333a56;
   }
 
   .burger-subcategories,
