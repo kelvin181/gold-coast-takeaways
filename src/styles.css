@@ -654,10 +654,12 @@ main .category-links a.active .category-link {
   height: 1.8rem;
 }
 
-.add-to-cart:hover {
-  background-color: #f7f5e6;
-  color: #333a56;
-  font-weight: bold;
+@media (hover: hover) {
+  .add-to-cart:hover {
+    background-color: #f7f5e6;
+    color: #333a56;
+    font-weight: bold;
+  }
 }
 
 .cart-item {
