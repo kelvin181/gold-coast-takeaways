@@ -1,8 +1,24 @@
-# React + Vite
+<h1 align="center">Welcome to Gold Coast Takeaways 👋</h1>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> Explore the best takeaways in Auckland. This is a website made for Gold Coast Takeaways which displays useful information to potential diners.
 
-Currently, two official plugins are available:
+### 🏠 [Homepage](https://goldcoasttakeaways.netlify.app)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
+
+- **Homepage**
+  - A modern home page with an about section that contains opening hours, location and contact information.
+  
+- **Menu**
+  - Explore Gold Coast Takeaway's menu and make your order with the cart feature.
+
+## Site Snippets
+![Homepage](./images/src/homepage.png)
+![Menu](./images/src/menu.png)
+
+## Author
+
+**Kelvin Chen**
+
+* Github: [@kelvin181](https://github.com/kelvin181)
+* LinkedIn: [@kelvin-chen-7a5444279](https://linkedin.com/in/kelvin-chen-7a5444279)
