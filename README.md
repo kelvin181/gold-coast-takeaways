@@ -2,8 +2,6 @@
 
 > Explore the best takeaways in Auckland. This is a website made for Gold Coast Takeaways which displays useful information to potential diners.
 
-### [Homepage](https://goldcoasttakeaways.netlify.app)
-
 ## Features
 
 **Homepage:** A modern home page with an about section that contains opening hours, location, and contact information.
