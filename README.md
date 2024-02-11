@@ -1,20 +1,18 @@
-<h1 align="center">Welcome to Gold Coast Takeaways 👋</h1>
+<h1 align="center">Welcome to Gold Coast Takeaways</h1>
 
 > Explore the best takeaways in Auckland. This is a website made for Gold Coast Takeaways which displays useful information to potential diners.
 
-### 🏠 [Homepage](https://goldcoasttakeaways.netlify.app)
+### [Homepage](https://goldcoasttakeaways.netlify.app)
 
 ## Features
 
-- **Homepage**
-  - A modern home page with an about section that contains opening hours, location and contact information.
-  
-- **Menu**
-  - Explore Gold Coast Takeaway's menu and make your order with the cart feature.
+**Homepage:** A modern home page with an about section that contains opening hours, location, and contact information.
+
+**Menu:** Explore Gold Coast Takeaway's menu and make your order with the cart feature.
 
 ## Site Snippets
-![Homepage](./images/src/homepage.png)
-![Menu](./images/src/menu.png)
+![Homepage](./src/images/homepage.png)
+![Menu](./src/images/menu.png)
 
 ## Author
 
