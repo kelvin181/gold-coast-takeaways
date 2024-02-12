@@ -17,4 +17,4 @@
 **Kelvin Chen**
 
 * Github: [@kelvin181](https://github.com/kelvin181)
-* LinkedIn: [@kelvin-chen-7a5444279](https://linkedin.com/in/kelvin-chen-7a5444279)
+* LinkedIn: [@kelvin-chen-7a5444279](https://linkedin.com/in/kelvin-chen8)
