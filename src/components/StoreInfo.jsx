@@ -6,9 +6,10 @@ import Contact from "./Contact";
 import Location from "./Location";
 import OpeningHours from "./OpeningHours";
 
-const StoreInfo = () => {
+const StoreInfo = (props) => {
   const infoControl = useAnimation();
   const [infoRef, infoInView] = useInView();
+  const { currentLoad } = props;
 
   const animationSlideDown = {
     hidden: { opacity: 0, y: 50 },
@@ -51,9 +52,7 @@ const StoreInfo = () => {
           </div>
         </div>
       </motion.div>
-      <div className="google-map">
-        <Location />
-      </div>
+      <Location currentLoad={currentLoad} />
     </>
   );
 };

@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import scrollArrow from "../images/scroll-arrow.svg";
 import "../styles.css";
@@ -8,10 +8,14 @@ import FrontPage from "./FrontPage";
 import StoreInfo from "./StoreInfo";
 
 const Home = () => {
+  const [load, setLoad] = useState(null);
+  const currentLoad = (loading) => {
+    setLoad(loading);
+  };
   return (
     <>
       <div className="slides home" id="home">
-        <FrontPage />
+        <FrontPage currentLoad={currentLoad} />
         <motion.button
           className="down-button"
           variants={{
@@ -41,7 +45,7 @@ const Home = () => {
         <About />
       </div>
       <div className="store-info-section" id="order">
-        <StoreInfo />
+        <StoreInfo currentLoad={load} />
       </div>
     </>
   );

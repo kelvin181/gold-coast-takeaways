@@ -28,7 +28,6 @@ const About = () => {
 
   return (
     <>
-      {/* <div className="about-box"> */}
       <motion.div
         className="about-text"
         ref={textRef}
@@ -45,7 +44,6 @@ const About = () => {
           of sharing a meal at Gold Coast Takeaways.
         </p>
       </motion.div>
-      {/* </div> */}
       <motion.div
         className="about-img"
         ref={imgRef}

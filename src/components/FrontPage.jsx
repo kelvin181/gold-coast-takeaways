@@ -1,11 +1,13 @@
 import { motion } from "framer-motion";
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import "../styles.css";
 
-const FrontPage = () => {
+const FrontPage = (props) => {
   const line1 = "Fish & Chips";
   const line2 = "Customers Love";
+  const orderRef = useRef(null);
+  const [loading, setLoading] = useState(true);
 
   const sentence = {
     hidden: { opacity: 0 },
@@ -36,6 +38,14 @@ const FrontPage = () => {
     "#7cb3c5",
     "#88b9c9",
   ];
+
+  const handleAnimationComplete = () => {
+    setLoading(false);
+  };
+
+  useEffect(() => {
+    props.currentLoad(loading);
+  }, [loading, props]);
 
   return (
     <div className="home-content">
@@ -103,6 +113,8 @@ const FrontPage = () => {
         animate="spring"
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}
+        ref={orderRef}
+        onAnimationComplete={handleAnimationComplete}
       >
         <Link to="/#order">Order Now</Link>
       </motion.button>
