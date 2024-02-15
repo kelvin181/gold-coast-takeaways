@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import React, { useLayoutEffect, useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import logo from "../images/logo-trans.png";
 import "../styles.css";
@@ -16,7 +16,7 @@ const Navbar = ({ isHomePage }) => {
     headerRef.current.classList.toggle("fixed-nav");
   };
 
-  useLayoutEffect(() => {
+  useEffect(() => {
     if (navOpen && location.pathname === "/Menu") {
       window.scrollTo(0, 0);
     }

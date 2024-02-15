@@ -1,4 +1,4 @@
-import { motion, useAnimation } from "framer-motion";
+import { motion, useAnimationControls } from "framer-motion";
 import React, { useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 import "../styles.css";
@@ -7,7 +7,7 @@ import Location from "./Location";
 import OpeningHours from "./OpeningHours";
 
 const StoreInfo = (props) => {
-  const infoControl = useAnimation();
+  const infoControl = useAnimationControls();
   const [infoRef, infoInView] = useInView();
   const { currentLoad } = props;
 

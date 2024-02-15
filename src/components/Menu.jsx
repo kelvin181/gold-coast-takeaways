@@ -1,4 +1,4 @@
-import React, { useEffect, useLayoutEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import toast from "react-hot-toast";
 import { Link } from "react-router-dom";
 import "../styles.css";
@@ -29,7 +29,7 @@ const Menu = () => {
       });
   }, []);
 
-  useLayoutEffect(() => {
+  useEffect(() => {
     if (categoryLinksClicked) {
       window.scrollTo(0, 0);
       setCategoryLinksClicked(false);

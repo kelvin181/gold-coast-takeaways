@@ -1,12 +1,12 @@
-import { motion, useAnimation } from "framer-motion";
+import { motion, useAnimationControls } from "framer-motion";
 import React, { useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 import storeFrontImage from "../images/store-front3.jpg";
 
 const About = () => {
-  const textControl = useAnimation();
+  const textControl = useAnimationControls();
   const [textRef, textInView] = useInView();
-  const imgControl = useAnimation();
+  const imgControl = useAnimationControls();
   const [imgRef, imgInView] = useInView();
 
   const animationScale = {

@@ -1,12 +1,11 @@
 import { motion } from "framer-motion";
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "../styles.css";
 
 const FrontPage = (props) => {
   const line1 = "Fish & Chips";
   const line2 = "Customers Love";
-  const orderRef = useRef(null);
   const [loading, setLoading] = useState(true);
 
   const sentence = {
@@ -113,7 +112,6 @@ const FrontPage = (props) => {
         animate="spring"
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}
-        ref={orderRef}
         onAnimationComplete={handleAnimationComplete}
       >
         <Link to="/#order">Order Now</Link>
