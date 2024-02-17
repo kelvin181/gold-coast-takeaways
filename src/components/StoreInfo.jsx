@@ -7,11 +7,14 @@ import Location from "./Location";
 import OpeningHours from "./OpeningHours";
 
 const StoreInfo = (props) => {
-  const infoControl = useAnimationControls();
-  const [infoRef, infoInView] = useInView();
+  const contactControl = useAnimationControls();
+  const [contactRef, contactInView] = useInView();
+  const hoursControl = useAnimationControls();
+  const [hoursRef, hoursInView] = useInView();
+
   const { currentLoad } = props;
 
-  const animationSlideDown = {
+  const animationSlideUp = {
     hidden: { opacity: 0, y: 50 },
     spring: {
       opacity: 1,
@@ -26,32 +29,44 @@ const StoreInfo = (props) => {
   };
 
   useEffect(() => {
-    if (infoInView) {
-      infoControl.start("spring");
+    if (contactInView) {
+      contactControl.start("spring");
     }
-  }, [infoControl, infoInView]);
+  }, [contactControl, contactInView]);
+
+  useEffect(() => {
+    if (hoursInView) {
+      hoursControl.start("spring");
+    }
+  }, [hoursControl, hoursInView]);
 
   return (
     <>
       <div className="section-title">
         <h2>Store Information</h2>
       </div>
-      <motion.div
-        className="store-info"
-        ref={infoRef}
-        variants={animationSlideDown}
-        initial="hidden"
-        animate={infoControl}
-      >
+      <div className="store-info">
         <div className="contact-hours-container">
-          <div className="contact">
+          <motion.div
+            className="contact"
+            ref={contactRef}
+            variants={animationSlideUp}
+            initial="hidden"
+            animate={contactControl}
+          >
             <Contact />
-          </div>
-          <div className="opening-hours">
+          </motion.div>
+          <motion.div
+            className="opening-hours"
+            ref={hoursRef}
+            variants={animationSlideUp}
+            initial="hidden"
+            animate={hoursControl}
+          >
             <OpeningHours />
-          </div>
+          </motion.div>
         </div>
-      </motion.div>
+      </div>
       <Location currentLoad={currentLoad} />
     </>
   );

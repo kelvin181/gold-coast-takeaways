@@ -9,20 +9,29 @@ const About = () => {
   const imgControl = useAnimationControls();
   const [imgRef, imgInView] = useInView();
 
-  const animationScale = {
-    visible: { opacity: 1, scale: 1, transition: { duration: 0.5 } },
-    hidden: { opacity: 0, scale: 0 },
+  const animationSlideUp = {
+    hidden: { opacity: 0, y: 50 },
+    spring: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        type: "spring",
+        stiffness: 75,
+        damping: 20,
+        delay: 0.3,
+      },
+    },
   };
 
   useEffect(() => {
     if (textInView) {
-      textControl.start("visible");
+      textControl.start("spring");
     }
   }, [textControl, textInView]);
 
   useEffect(() => {
     if (imgInView) {
-      imgControl.start("visible");
+      imgControl.start("spring");
     }
   }, [imgControl, imgInView]);
 
@@ -31,7 +40,7 @@ const About = () => {
       <motion.div
         className="about-text"
         ref={textRef}
-        variants={animationScale}
+        variants={animationSlideUp}
         initial="hidden"
         animate={textControl}
       >
@@ -47,7 +56,7 @@ const About = () => {
       <motion.div
         className="about-img"
         ref={imgRef}
-        variants={animationScale}
+        variants={animationSlideUp}
         initial="hidden"
         animate={imgControl}
       >
