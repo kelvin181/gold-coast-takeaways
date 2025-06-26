@@ -19,19 +19,19 @@ const OpeningHours = () => (
         </tr>
         <tr>
           <th>Thursday &nbsp;:</th>
-          <td>11:30am - 8:30pm</td>
+          <td>12:00pm - 8:30pm</td>
         </tr>
         <tr>
           <th>Friday &nbsp;:</th>
-          <td>11:30am - 8:30pm</td>
+          <td>12:00pm - 8:30pm</td>
         </tr>
         <tr>
           <th>Saturday &nbsp;:</th>
-          <td>11:30am - 8:30pm</td>
+          <td>12:00pm - 8:30pm</td>
         </tr>
         <tr>
           <th>Sunday &nbsp;:</th>
-          <td>11:30am - 8:30pm</td>
+          <td>12:00pm - 8:30pm</td>
         </tr>
       </tbody>
     </table>
