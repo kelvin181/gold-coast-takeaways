@@ -7,7 +7,7 @@ const OpeningHours = () => (
       <tbody>
         <tr>
           <th>Monday &nbsp;:</th>
-          <td>3pm - 8pm</td>
+          <td>3:00pm - 8:00pm</td>
         </tr>
         <tr>
           <th>Tuesday &nbsp;:</th>
@@ -15,23 +15,23 @@ const OpeningHours = () => (
         </tr>
         <tr>
           <th>Wednesday &nbsp;:</th>
-          <td>11:30am - 8:30pm</td>
+          <td>3:00pm - 8:30pm</td>
         </tr>
         <tr>
           <th>Thursday &nbsp;:</th>
-          <td>11:30am - 8:30pm</td>
+          <td>12:00pm - 8:30pm</td>
         </tr>
         <tr>
           <th>Friday &nbsp;:</th>
-          <td>11:30am - 8:30pm</td>
+          <td>12:00pm - 8:30pm</td>
         </tr>
         <tr>
           <th>Saturday &nbsp;:</th>
-          <td>11:30am - 8:30pm</td>
+          <td>12:00pm - 8:30pm</td>
         </tr>
         <tr>
           <th>Sunday &nbsp;:</th>
-          <td>11:30am - 8:30pm</td>
+          <td>12:00pm - 8:30pm</td>
         </tr>
       </tbody>
     </table>
